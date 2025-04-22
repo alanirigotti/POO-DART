@@ -1,6 +1,7 @@
-// 3. Crie uma classe Funcionario com nome e salario. 
-//Depois, crie duas classes que herdam de Funcionario: 
-//Gerente e Programador
+/* AUTORA: ALANI RIGOTTI DE OLIVEIRA
+ 3. Crie uma classe Funcionario com nome e salario. 
+Depois, crie duas classes que herdam de Funcionario: 
+Gerente e Programador */
 
 import 'Funcionario.dart';
 
