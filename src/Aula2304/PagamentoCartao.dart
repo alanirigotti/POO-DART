@@ -7,13 +7,11 @@ class PagamentoCartao implements Pagamento {
 
   PagamentoCartao(this.valorPagamento, this.parcelas);
 
-  void realizarPagamento(double valor) {
+  void realizarPagamento() {
     if(valorPagamento > 0) {
       print("Efetuando pagamento no cartão R\$ $valorPagamento");
-
-      valorPagamento = valor;
     } else {
-      print("Saldo inexistente.");
+      print("Ocorreu um erro.");
     }
   }
 

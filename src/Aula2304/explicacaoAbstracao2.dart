@@ -21,11 +21,11 @@ import 'PagamentoCartao.dart';
 import 'PagamentoPix.dart';
 
 void main() {
-  PagamentoPix pix = PagamentoPix();
-  pix.realizarPagamento(300);
+  PagamentoPix pix = PagamentoPix(300);
+  pix.realizarPagamento();
   pix.emitirComprovante();
 
   PagamentoCartao cartao = PagamentoCartao(200, 2); 
-  cartao.realizarPagamento(300);
+  cartao.realizarPagamento();
   cartao.emitirComprovante();
 }
