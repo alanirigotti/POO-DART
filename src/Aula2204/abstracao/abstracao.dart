@@ -17,9 +17,14 @@ void main() {
 
   Cachorro dog = new Cachorro();
   dog.emitirSom();
-
+ 
   Gato cat = new Gato(); 
   cat.emitirSom();
   cat.dormir();
+
+/** usando interface através do implements
+ * quando usamos implements, a classe é obrigada a implementar tudo que 
+ * existe na classe abstrata, incluindo métodos já implementados
+ */
 
 }
