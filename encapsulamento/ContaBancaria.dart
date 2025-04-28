@@ -17,5 +17,14 @@ class ContaBancaria {
     }
     return false;
   }
+
+  bool sacar(double valor) {
+    if(_saldo >= valor) {
+      _saldo -= valor;
+      return true;
+    } 
+    print("Ops, saldo insuficiente ;(");
+    return false;
+  }
   
 }
