@@ -9,20 +9,25 @@ class CalculadoraSalario {
 }
  */ 
 
- class CalculadoraSalario {
-
-  double calcular(String cargo, String valor) {
-    if (cargo == 'gerente') return 5000;
-    if (cargo == 'desenvolvedor') return 4000; 
-    return 0;
-  }  
+// refatoração
+abstract class Funcionario {
+  double calcularSalario();
 }
 
-    
 class Gerente implements CalculadoraSalario {
+  @override
+    double calcular() => 5000;
+}
 
-    String cargo; 
-    
+class Desenvolvedor implements Funcionario {
+  @override
+  double calcularSalario() => 4000;
+}
+
+class CalculadoraSalario {
+  double calcular(Funcionario funcionario) {
+    return Funcionario.calcularSalario();
+  }
 }
 
  

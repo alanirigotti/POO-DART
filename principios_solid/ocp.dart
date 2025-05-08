@@ -38,12 +38,12 @@
   class calcularImpostos{
     double calcular(Produto produto) {
         return produto.calcularImposto();
-    }
+    } 
   }
 
   void main() {
 
-    final calculadora = CalculadoraImpostoS();
+    calcularImpostos calculadora = calcularImpostos();
 
     print("Imposto eletrônicos: ${calculadora.calcular(Eletronico())}");
     print("Imposto alimentos: ${calculadora.calcular(Alimento())}");

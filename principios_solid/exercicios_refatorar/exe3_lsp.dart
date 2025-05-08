@@ -17,26 +17,26 @@ class Quadrado extends Retangulo {
 
   abstract class CalculoArea {
 
-    double largura;      
-    double altura;  
-
-    CalculoArea(largura, altura);
+    double? largura;      
+    double? altura;  
 
     double area(double largura, double altura);
+    
   }
 
   class Retangulo extends CalculoArea {
 
-    double largura;
-    double altura;
+    double? largura;
+    double? altura;
 
     Retangulo(this.largura, this.altura);
 
+    @override 
     double area() => largura * altura;
   }
 
   class Quadrado extends CalculoArea {
 
-      @override 
       double area(largura, altura) : super(largura, altura);  
+
   }

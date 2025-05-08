@@ -11,25 +11,24 @@ class RelatorioService {
 
     void enviarEmail() {
         print("email enviado");
-    }
-
-    /** SOLUÇÃO 
     
-    */
+    }
+}
 
-    class RelatorioGerador {
+    /** SOLUÇÃO
+    */
+  
+  class RelatorioGerador {
 
         void gerar() {
             print("relatório gerado"); 
         }
-
     }
 
-    class RelatorioEnviador() {
+    class RelatorioEnviador {
 
         void enviar() {
             print("e-mail enviado");
         }
 
     }
-}
